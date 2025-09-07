@@ -1,0 +1,10 @@
+Flask
+twilio
+gspread
+google-auth
+google-auth-oauthlib
+requests
+pytz
+APScheduler
+apscheduler
+pydantic
