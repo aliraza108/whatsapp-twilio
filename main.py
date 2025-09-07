@@ -375,6 +375,7 @@ You are a personalized AI Assistant for WhatsApp users. Your main goal is to **h
 if __name__ == "__main__":
     print("👋 WhatsApp AI Agent is running with Namaz reminders!")
     schedule_namaz_jobs()   # start namaz reminders
-    app.run(port=5000, debug=True)
+    app.run()
+
 
 
