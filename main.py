@@ -17,7 +17,6 @@ from datetime import datetime
 import pytz
 from pydantic import BaseModel
 from dataclasses import dataclass
-from dotenv import load_dotenv
 import os
 load_dotenv()
 @dataclass
@@ -377,4 +376,5 @@ if __name__ == "__main__":
     print("👋 WhatsApp AI Agent is running with Namaz reminders!")
     schedule_namaz_jobs()   # start namaz reminders
     app.run(port=5000, debug=True)
+
 
