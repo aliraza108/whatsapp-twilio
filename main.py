@@ -367,15 +367,15 @@ You are a personalized AI Assistant for WhatsApp users. Your main goal is to **h
     return str(resp)
 
 
-
-
-# ======================
-# 🚀 MAIN APP START
-# ======================
 if __name__ == "__main__":
-    print("👋 WhatsApp AI Agent is running with Namaz reminders!")
-    schedule_namaz_jobs()   # start namaz reminders
-    app.run()
+    # Only run this when testing locally
+    print("👋 WhatsApp AI Agent is running with Namaz reminders (local only)!")
+    from apscheduler.schedulers.background import BackgroundScheduler
+    from datetime import datetime
+    import pytz
+
+    schedule_namaz_jobs()   # ✅ Will only run locally
+    app.run(host="0.0.0.0", port=5000, debug=True)
 
 
 
